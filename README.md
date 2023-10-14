@@ -40,6 +40,6 @@ whole wikipedia from any root page and save it to the DB.
 Task implementation should be shared on some public repository (for example github)
 
 ## Notes
-Built with maven 3.6.0 and JDK 16
+Built with maven 3.6.0 and JDK 21
 
         

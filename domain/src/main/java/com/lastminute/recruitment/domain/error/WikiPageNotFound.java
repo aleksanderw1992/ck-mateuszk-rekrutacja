@@ -4,4 +4,8 @@ public class WikiPageNotFound extends RuntimeException{
       public WikiPageNotFound(String message, Throwable cause) {
         super(message, cause);
     }
+
+  public WikiPageNotFound(String message) {
+    super(message);
+  }
 }
