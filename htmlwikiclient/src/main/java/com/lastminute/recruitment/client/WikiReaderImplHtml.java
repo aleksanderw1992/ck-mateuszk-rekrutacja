@@ -3,7 +3,9 @@ package com.lastminute.recruitment.client;
 import com.lastminute.recruitment.domain.WikiPage;
 import com.lastminute.recruitment.domain.WikiReader;
 import com.lastminute.recruitment.domain.error.WikiPageNotFound;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,8 +38,13 @@ public class WikiReaderImplHtml implements WikiReader {
 
       return new WikiPage(title, content, selfLink, links);
 
-    } catch (IOException e) {
+    }
+    catch (FileNotFoundException e) {
       throw new WikiPageNotFound("Wiki page not found at: " + link, e);
+
+    }
+    catch (IOException e) {
+      throw new RuntimeException("Wiki page read failed: " + link, e);
     }
   }
 }
