@@ -1,0 +1,304 @@
+/Users/macbook/Library/Java/JavaVirtualMachines/openjdk-21/Contents/Home/bin/java -Dmaven.multiModuleProjectDirectory=/Users/macbook/work/ck-mateuszk-rekrutacja -Dmaven.home=/Users/macbook/progs/apache-maven-3.6.0 -Dclassworlds.conf=/Users/macbook/progs/apache-maven-3.6.0/bin/m2.conf -Dmaven.ext.class.path=/Users/macbook/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/222.4167.29/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven-event-listener.jar -javaagent:/Users/macbook/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/222.4167.29/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=64294:/Users/macbook/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/222.4167.29/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/macbook/progs/apache-maven-3.6.0/boot/plexus-classworlds-2.5.2.jar org.codehaus.classworlds.Launcher -Didea.version=2022.2.2 -s /Users/macbook/.m2/settings.xml -Dmaven.repo.local=/Users/macbook/.m2/repository clean package
+[INFO] Scanning for projects...
+[WARNING]
+[WARNING] Some problems were encountered while building the effective model for com.lastminute.recruitment:htmlwikiclient:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.jsoup:jsoup:jar -> duplicate declaration of version (?) @ line 48, column 17
+[WARNING]
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING]
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] parent                                                             [pom]
+[INFO] domain                                                             [jar]
+[INFO] api                                                                [jar]
+[INFO] persistence                                                        [jar]
+[INFO] jsonwikiclient                                                     [jar]
+[INFO] htmlwikiclient                                                     [jar]
+[INFO] app                                                                [jar]
+[INFO]
+[INFO] -----------------< com.lastminute.recruitment:parent >------------------
+[INFO] Building parent 0.0.0                                              [1/7]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.2.0:clean (default-clean) @ parent ---
+[INFO]
+[INFO] -----------------< com.lastminute.recruitment:domain >------------------
+[INFO] Building domain 0.0.1-SNAPSHOT                                     [2/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.2.0:clean (default-clean) @ domain ---
+[INFO] Deleting /Users/macbook/work/ck-mateuszk-rekrutacja/domain/target
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ domain ---
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/domain/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/domain/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ domain ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 5 source files with javac [debug release 21] to target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ domain ---
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/domain/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ domain ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 21] to target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0:test (default-test) @ domain ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.lastminute.recruitment.domain.WikiScrapperTest
+WARNING: A Java agent has been loaded dynamically (/Users/macbook/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.4/byte-buddy-agent-1.14.4.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.704 s - in com.lastminute.recruitment.domain.WikiScrapperTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ domain ---
+[INFO] Building jar: /Users/macbook/work/ck-mateuszk-rekrutacja/domain/target/domain-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] -------------------< com.lastminute.recruitment:api >-------------------
+[INFO] Building api 0.0.1-SNAPSHOT                                        [3/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.2.0:clean (default-clean) @ api ---
+[INFO] Deleting /Users/macbook/work/ck-mateuszk-rekrutacja/api/target
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ api ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ api ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 21] to target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ api ---
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/api/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ api ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0:test (default-test) @ api ---
+[INFO]
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ api ---
+[INFO] Building jar: /Users/macbook/work/ck-mateuszk-rekrutacja/api/target/api-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] ---------------< com.lastminute.recruitment:persistence >---------------
+[INFO] Building persistence 0.0.1-SNAPSHOT                                [4/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.2.0:clean (default-clean) @ persistence ---
+[INFO] Deleting /Users/macbook/work/ck-mateuszk-rekrutacja/persistence/target
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ persistence ---
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/persistence/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/persistence/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ persistence ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 21] to target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ persistence ---
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/persistence/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ persistence ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0:test (default-test) @ persistence ---
+[INFO] No tests to run.
+[INFO]
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ persistence ---
+[INFO] Building jar: /Users/macbook/work/ck-mateuszk-rekrutacja/persistence/target/persistence-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] -------------< com.lastminute.recruitment:jsonwikiclient >--------------
+[INFO] Building jsonwikiclient 0.0.1-SNAPSHOT                             [5/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.2.0:clean (default-clean) @ jsonwikiclient ---
+[INFO] Deleting /Users/macbook/work/ck-mateuszk-rekrutacja/jsonwikiclient/target
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ jsonwikiclient ---
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ jsonwikiclient ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 21] to target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ jsonwikiclient ---
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/jsonwikiclient/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ jsonwikiclient ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 21] to target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0:test (default-test) @ jsonwikiclient ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.lastminute.recruitment.client.WikiReaderImplJsonTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 s - in com.lastminute.recruitment.client.WikiReaderImplJsonTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ jsonwikiclient ---
+[INFO] Building jar: /Users/macbook/work/ck-mateuszk-rekrutacja/jsonwikiclient/target/jsonwikiclient-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] -------------< com.lastminute.recruitment:htmlwikiclient >--------------
+[INFO] Building htmlwikiclient 0.0.1-SNAPSHOT                             [6/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.2.0:clean (default-clean) @ htmlwikiclient ---
+[INFO] Deleting /Users/macbook/work/ck-mateuszk-rekrutacja/htmlwikiclient/target
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ htmlwikiclient ---
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ htmlwikiclient ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 21] to target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ htmlwikiclient ---
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/htmlwikiclient/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ htmlwikiclient ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 21] to target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0:test (default-test) @ htmlwikiclient ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.lastminute.recruitment.client.WikiReaderImplHtmlTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in com.lastminute.recruitment.client.WikiReaderImplHtmlTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ htmlwikiclient ---
+[INFO] Building jar: /Users/macbook/work/ck-mateuszk-rekrutacja/htmlwikiclient/target/htmlwikiclient-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] -------------------< com.lastminute.recruitment:app >-------------------
+[INFO] Building app 0.0.1-SNAPSHOT                                        [7/7]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.2.0:clean (default-clean) @ app ---
+[INFO] Deleting /Users/macbook/work/ck-mateuszk-rekrutacja/app/target
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ app ---
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/app/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/app/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ app ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug release 21] to target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ app ---
+[INFO] skip non existing resourceDirectory /Users/macbook/work/ck-mateuszk-rekrutacja/app/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ app ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug release 21] to target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0:test (default-test) @ app ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.lastminute.recruitment.WikiScrapperApplicationTest
+15:46:30.226 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.lastminute.recruitment.WikiScrapperApplicationTest]: WikiScrapperApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:46:30.283 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.lastminute.recruitment.WikiScrapperApplication for test class com.lastminute.recruitment.WikiScrapperApplicationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.0)
+
+2023-10-14T15:46:30.481+02:00  INFO 46687 --- [           main] c.l.r.WikiScrapperApplicationTest        : Starting WikiScrapperApplicationTest using Java 21 with PID 46687 (started by macbook in /Users/macbook/work/ck-mateuszk-rekrutacja/app)
+2023-10-14T15:46:30.482+02:00  INFO 46687 --- [           main] c.l.r.WikiScrapperApplicationTest        : No active profile set, falling back to 1 default profile: "default"
+2023-10-14T15:46:31.088+02:00  INFO 46687 --- [           main] c.l.r.WikiScrapperApplicationTest        : Started WikiScrapperApplicationTest in 0.734 seconds (process running for 1.247)
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (/Users/macbook/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.4/byte-buddy-agent-1.14.4.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.475 s - in com.lastminute.recruitment.WikiScrapperApplicationTest
+[INFO] Running com.lastminute.recruitment.WikiScrapperResourceTest
+2023-10-14T15:46:31.610+02:00  INFO 46687 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.lastminute.recruitment.WikiScrapperResourceTest]: WikiScrapperResourceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-14T15:46:31.619+02:00  INFO 46687 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.lastminute.recruitment.WikiScrapperApplication for test class com.lastminute.recruitment.WikiScrapperResourceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.0)
+
+2023-10-14T15:46:31.635+02:00  INFO 46687 --- [           main] c.l.r.WikiScrapperResourceTest           : Starting WikiScrapperResourceTest using Java 21 with PID 46687 (started by macbook in /Users/macbook/work/ck-mateuszk-rekrutacja/app)
+2023-10-14T15:46:31.635+02:00  INFO 46687 --- [           main] c.l.r.WikiScrapperResourceTest           : No active profile set, falling back to 1 default profile: "default"
+2023-10-14T15:46:31.986+02:00  INFO 46687 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-10-14T15:46:31.987+02:00  INFO 46687 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-10-14T15:46:31.990+02:00  INFO 46687 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-10-14T15:46:31.999+02:00  INFO 46687 --- [           main] c.l.r.WikiScrapperResourceTest           : Started WikiScrapperResourceTest in 0.378 seconds (process running for 2.158)
+2023-10-14T15:46:32.093+02:00  INFO 46687 --- [           main] c.l.r.rest.WikiScrapperResource          : Caught in controller
+
+com.lastminute.recruitment.domain.error.WikiPageNotFound: null
+
+2023-10-14T15:46:32.099+02:00  INFO 46687 --- [           main] c.l.r.rest.WikiScrapperResource          : Caught in controller
+
+java.lang.RuntimeException: null
+
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.494 s - in com.lastminute.recruitment.WikiScrapperResourceTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ app ---
+[INFO] Building jar: /Users/macbook/work/ck-mateuszk-rekrutacja/app/target/app-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] parent 0.0.0 ....................................... SUCCESS [  0.077 s]
+[INFO] domain 0.0.1-SNAPSHOT .............................. SUCCESS [  2.440 s]
+[INFO] api 0.0.1-SNAPSHOT ................................. SUCCESS [  0.209 s]
+[INFO] persistence 0.0.1-SNAPSHOT ......................... SUCCESS [  0.083 s]
+[INFO] jsonwikiclient 0.0.1-SNAPSHOT ...................... SUCCESS [  0.782 s]
+[INFO] htmlwikiclient 0.0.1-SNAPSHOT ...................... SUCCESS [  0.557 s]
+[INFO] app 0.0.1-SNAPSHOT ................................. SUCCESS [  2.546 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.048 s
+[INFO] Finished at: 2023-10-14T15:46:32+02:00
+[INFO] ------------------------------------------------------------------------
+
+Process finished with exit code 0
