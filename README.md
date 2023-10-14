@@ -32,12 +32,14 @@ whole wikipedia from any root page and save it to the DB.
 
 1. It's allowed to use any testing framework (for example Mockito for mocking)
 2. It's allowed & recommended using external libraries to read both `html` & `json` files
-3. Domain module shouldn't have dependency to any other module
+3. Domain module shouldn't ~~~~have dependency to any other module
 
 
 ## Submitting task
 
 Task implementation should be shared on some public repository (for example github)
 
+## Notes
+Built with maven 3.6.0 and JDK 16
 
         
