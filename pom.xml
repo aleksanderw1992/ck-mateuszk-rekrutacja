@@ -1,21 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xmlns="http://maven.apache.org/POM/4.0.0"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.1.0</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+  <groupId>com.lastminute.recruitment</groupId>
+  <artifactId>parent</artifactId>
+  <version>0.0.0</version>
+  <packaging>pom</packaging>
 
-	<groupId>com.lastminute.recruitment</groupId>
-	<artifactId>parent</artifactId>
-	<version>0.0.0</version>
-	<packaging>pom</packaging>
+  <modules>
+    <module>domain</module>
+    <module>api</module>
+    <module>app</module>
+    <module>jsonwikiclient</module>
+    <module>htmlwikiclient</module>
+    <module>persistence</module>
+  </modules>
+  <repositories>
+    <repository>
+      <id>mvnrepository</id>
+      <name>mvnrepository</name>
+      <url>http://www.mvnrepository.com</url>
+    </repository>
+  </repositories>
+  <dependencyManagement>
+    <dependencies>
 
-	<modules>
-		<module>domain</module>
-		<module>api</module>
-		<module>app</module>
-		<module>jsonwikiclient</module>
-		<module>htmlwikiclient</module>
-		<module>persistence</module>
-	</modules>
+      <dependency>
+        <groupId>org.jsoup</groupId>
+        <artifactId>jsoup</artifactId>
+        <version>1.16.1</version>
+      </dependency>
+      <!-- JUnit 5 dependencies -->
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.7.0</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>5.7.0</version>
+        <scope>test</scope>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
 
 </project>
